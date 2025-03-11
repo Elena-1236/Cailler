@@ -8,7 +8,7 @@ const app = createApp({
   port: 18324,
 });
 
-/* Startseite */
+/* Startseite. */
 app.get("/", async function (req, res) {
   res.render("start", {});
 });
