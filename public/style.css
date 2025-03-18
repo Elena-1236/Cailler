@@ -1,6 +1,46 @@
 @import url("https://use.typekit.net/hop7kvp.css");
 
-* {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-brown: #603e31;
+  --color-beige-medium: #e0c58e;
+  --color-beige-light: #f5ecda;
+
+  --font-size-big: 30px;
+  --font-size-small: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 1000px;
+  padding: 120px 80px 0 80px;
+}
+
+h1 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size-big);
+  color: var(--color-brown);
+}
+
+h2 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-big);
+  color: var(--color-white);
 }
 
 p,
@@ -8,10 +48,67 @@ a {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: var(--font-size-small);
+  color: var(--color-brown);
+  text-decoration: none;
 }
 
-h1 {
+header img,
+li,
+li a {
   font-family: "futura-pt", sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: var(--font-size-big);
+  color: var(--color-brown);
+  list-style: none;
+}
+
+button,
+button a {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-big);
+  color: var(--color-white);
+  background-color: var(--color-beige-medium);
+  border: 0;
+  padding: 8px 25px;
+  border-radius: 10px;
+}
+
+/*----------------------------Navigation-----------------------------------*/
+header {
+  padding: 40px 0;
+  display: flex;
+  width: 88%;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--color-beige-medium);
+  position: fixed;
+  top: 0;
+  left: 80px;
+  background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+  padding-right: 80px;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.unternavigation {
+  display: none;
+}
+
+header a:hover {
+  color: var(--color-beige-medium);
+}
+
+#link-unav1:hover #unav1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  z-index: 1000;
 }

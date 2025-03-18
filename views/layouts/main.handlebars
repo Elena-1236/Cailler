@@ -9,39 +9,42 @@
 
   <body>
     <header>
-      <a href="/">Logo</a>
-      <ul>
-        <li><a href="/besuch">Besuch</a>
-          <ul>
+      <a href="/"><img src="" alt="Cailler" /></a>
+      <ul class="navigation">
+        <li><a href="/besuch" id="link-unav1">Besuch</a>
+          <ul class="unternavigation" id="unav1">
             <li><a href="/angebot">Angebote</a></li>
             <li><a href="/">Gruppen</a></li>
             <li><a href="/">Tickets</a></li>
           </ul>
         </li>
         <li><a href="/">Rezept</a></li>
-        <li><a href="/shop">Shop</a>
-          <ul>
+        <li><a href="/shop" id="link-unav2">Shop</a>
+          <ul class="unternavigation" id="unav2">
             <li><a href="/">Zubehör</a></li>
             <li><a href="/">Personalisiertes</a></li>
             <li><a href="/">Souvenirs</a></li>
             <li><a href="/">Firmenkunden</a></li>
           </ul>
         </li>
-        <li><a href="/ueberuns">Über uns</a>
-          <ul>
+        <li><a href="/ueberuns" id="link-unav3">Über uns</a>
+          <ul class="unternavigation" id="unav3">
             <li><a href="/">Kontakt</a></li>
             <li><a href="/news">News</a></li>
           </ul>
         </li>
       </ul>
       <ul>
-        <li><a href="">DE</a></li>
-        <li><a href="">FR</a></li>
-        <li><a href="">EN</a></li>
+        <li><a href="" id="link-unav4">DE</a></li>
+        <ul class="unternavigation" id="unav4">
+          <li><a href="">FR</a></li>
+          <li><a href="">EN</a></li>
+        </ul>
+
       </ul>
     </header>
 
-    {{{body}}}
+    <main>{{{body}}}</main>
 
     <footer>
       <a href="/impressum">Impressum</a>

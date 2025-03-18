@@ -33,6 +33,15 @@ app.get("/news", async function (req, res) {
   res.render("news", {});
 });
 
+/*
+const unav1 = document.getElementById("unav1");
+const linkunav1 = document.getElementById("link-unav1");
+
+linkunav1.addEventListener("hover", () => {
+  unav1.style.display = "flex";
+});
+*/
+
 /* Wichtig! Diese Zeilen müssen immer am Schluss der Website stehen! */
 app.listen(3010, () => {
   console.log(`Example app listening at http://localhost:3010`);
