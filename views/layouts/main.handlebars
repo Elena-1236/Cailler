@@ -11,7 +11,7 @@
     <header>
       <a href="/"><img src="" alt="Cailler" /></a>
       <ul class="navigation">
-        <li><a href="/besuch" id="link-unav1">Besuch</a>
+        <li id="link-unav1"><a href="/besuch">Besuch</a>
           <ul class="unternavigation" id="unav1">
             <li><a href="/angebot">Angebote</a></li>
             <li><a href="/">Gruppen</a></li>
@@ -19,7 +19,7 @@
           </ul>
         </li>
         <li><a href="/">Rezept</a></li>
-        <li><a href="/shop" id="link-unav2">Shop</a>
+        <li id="link-unav2"><a href="/shop">Shop</a>
           <ul class="unternavigation" id="unav2">
             <li><a href="/">Zubehör</a></li>
             <li><a href="/">Personalisiertes</a></li>
@@ -27,7 +27,7 @@
             <li><a href="/">Firmenkunden</a></li>
           </ul>
         </li>
-        <li><a href="/ueberuns" id="link-unav3">Über uns</a>
+        <li id="link-unav3"><a href="/ueberuns">Über uns</a>
           <ul class="unternavigation" id="unav3">
             <li><a href="/">Kontakt</a></li>
             <li><a href="/news">News</a></li>
@@ -35,11 +35,12 @@
         </li>
       </ul>
       <ul>
-        <li><a href="" id="link-unav4">DE</a></li>
-        <ul class="unternavigation" id="unav4">
-          <li><a href="">FR</a></li>
-          <li><a href="">EN</a></li>
-        </ul>
+        <li id="link-unav4"><a href="">DE</a>
+          <ul id="unav4">
+            <li><a href="">FR</a></li>
+            <li><a href="">EN</a></li>
+          </ul>
+        </li>
 
       </ul>
     </header>
@@ -47,7 +48,48 @@
     <main>{{{body}}}</main>
 
     <footer>
-      <a href="/impressum">Impressum</a>
+      <div class="footer-links footer_strich-r">
+        <div class="footer-nav1">
+          <div class="footer-nav1-some">
+            <a href=""><img src="" alt="facebook" /></a>
+            <a href=""><img src="" alt="instagram" /></a>
+          </div>
+          <div class="footer-nav1-links">
+            <a href="">Kontakt</a>
+            <a href="" class="footer_striche">B2B Shop</a>
+            <a href="">Newsletter</a>
+          </div>
+        </div>
+        <div class="footer-nav2">
+          <a href="" class="footer_strich-r">FAQ</a>
+          <a href="">Datenschutz</a>
+          <a href="" class="footer_striche">Nutzungsbedingungen</a>
+          <a href="">Verkaufskonditionen</a>
+        </div>
+        <div class="footer-logos">
+          <a href=""><img src="" alt="Nestlé" /></a>
+          <div class="footer-logos-titel">
+            <a href=""><img src="" alt="Travelers' Chioce" /></a>
+            <a href=""><img src="" alt="SGS" /></a>
+            <a href=""><img src="" alt="OKGO" /></a>
+            <a href=""><img src="" alt="Swiss Tainable" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-ort">
+        <iframe
+          class="footer-ort-karte"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.006128465897!2d7.106164375165992!3d46.606881856478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e8a0037c5c85d%3A0x2d9882185016e539!2sMaison%20Cailler!5e0!3m2!1sen!2sch!4v1742914939097!5m2!1sen!2sch"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p>Öffnungszeiten Maison Cailler</p>
+        <p>Mo-So: 10.00 Uhr - 17.00 Uhr</p>
+      </div>
     </footer>
   </body>
 
