@@ -16,6 +16,8 @@
 
   --font-size-big: 30px;
   --font-size-small: 18px;
+
+  --padding-inhalte: 48px 80px 48px 80px;
 }
 
 html {
@@ -23,13 +25,12 @@ html {
 }
 
 main {
-  min-height: 1000px;
-  padding: 120px 80px 0 80px;
+  padding: 128px 0 0 0;
 }
 
 h1 {
   font-family: "futura-pt", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-size: var(--font-size-big);
   color: var(--color-brown);
@@ -37,10 +38,19 @@ h1 {
 
 h2 {
   font-family: "futura-pt", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-size: var(--font-size-big);
   color: var(--color-white);
+}
+
+h3 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--font-size-small);
+  color: var(--color-brown);
+  text-decoration: none;
 }
 
 p,
@@ -73,7 +83,7 @@ button a {
   color: var(--color-white);
   background-color: var(--color-beige-medium);
   border: 0;
-  padding: 8px 25px;
+  padding: 5px 18px;
   border-radius: 10px;
 }
 
@@ -82,17 +92,27 @@ img {
   height: auto;
 }
 
+.bg-beige {
+  background-color: var(--color-beige-light);
+  padding: var(--padding-inhalte);
+}
+
+.bg-white {
+  padding: var(--padding-inhalte);
+}
+
 /*----------------------------Navigation-----------------------------------*/
 header {
-  padding: 40px 0;
+  padding: 40px 80px;
   display: flex;
-  width: 88%;
+  width: 100%;
   justify-content: space-between;
   border-bottom: 3px solid var(--color-beige-medium);
   position: fixed;
   top: 0;
-  left: 80px;
+  left: 0;
   background-color: #fff;
+  z-index: 100;
 }
 
 .navigation {
@@ -246,4 +266,130 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*--------------------------------Banner----------------------*/
+
+.banner {
+  position: relative;
+  background-color: var(--color-brown);
+  height: 80vh;
+}
+
+.banner h2 {
+  position: absolute;
+  top: 380px;
+  left: 80px;
+}
+
+/*------------------- Home ----------------------*/
+
+.home1 {
+  display: flex;
+  gap: 120px;
+}
+
+.home1--text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.home1--bild {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.home2 {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.home2-1,
+.home2-2 {
+  display: flex;
+  gap: 160px;
+}
+
+.home2-1--text,
+.home2-2--text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.home2-1--bild,
+.home2-2--bild {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 20%;
+  align-items: center;
+}
+
+.home3 {
+  display: flex;
+  gap: 80px;
+}
+
+.home3--text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.home3--bild {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+}
+
+.home4 {
+  display: flex;
+  gap: 160px;
+}
+
+.home4--text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 60%;
+}
+
+.home4--bild {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 8px;
+  align-items: center;
+}
+/*------------------- Escape Game ----------------------*/
+#escape {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.escape {
+  display: flex;
+  flex-direction: row;
+}
+
+/*------------------- News ----------------------*/
+#news {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
 }

@@ -17,8 +17,8 @@ app.get("/besuch", async function (req, res) {
   res.render("besuch", {});
 });
 
-app.get("/angebot", async function (req, res) {
-  res.render("angebot", {});
+app.get("/erlebnisse", async function (req, res) {
+  res.render("erlebnisse", {});
 });
 
 app.get("/shop", async function (req, res) {
@@ -31,6 +31,18 @@ app.get("/ueberuns", async function (req, res) {
 
 app.get("/news", async function (req, res) {
   res.render("news", {});
+});
+
+app.get("/newsartikel", async function (req, res) {
+  res.render("newsartikel", {});
+});
+
+app.get("/escapegame", async function (req, res) {
+  res.render("escapegame", {});
+});
+
+app.get("/produkt", async function (req, res) {
+  res.render("produkt", {});
 });
 
 /* Wichtig! Diese Zeilen müssen immer am Schluss der Website stehen! */
