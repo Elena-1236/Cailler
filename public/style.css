@@ -63,6 +63,18 @@ a {
   text-decoration: none;
 }
 
+.a-light {
+  color: var(--color-beige-medium);
+}
+
+.p-bold {
+  font-weight: 600;
+}
+
+.kleingedrucktes {
+  font-size: 12px;
+}
+
 header img,
 li,
 li a {
@@ -98,6 +110,11 @@ img {
 }
 
 .bg-white {
+  padding: var(--padding-inhalte);
+}
+
+.bg-brown {
+  background-color: var(--color-brown);
   padding: var(--padding-inhalte);
 }
 
@@ -289,6 +306,10 @@ iframe {
   gap: 120px;
 }
 
+.home1 button {
+  align-self: flex-start;
+}
+
 .home1--text {
   display: flex;
   flex-direction: column;
@@ -337,6 +358,10 @@ iframe {
   gap: 80px;
 }
 
+.home3 button {
+  align-self: flex-start;
+}
+
 .home3--text {
   display: flex;
   flex-direction: column;
@@ -370,6 +395,84 @@ iframe {
   gap: 8px;
   align-items: center;
 }
+/*--------------- Besuch -----------------------*/
+
+.besuch1 {
+  margin: 40px 0;
+}
+
+.besuch1 p {
+  width: 80%;
+}
+
+.besuch2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.besuch2__container {
+  display: flex;
+}
+
+.besuch2__container--1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  padding-right: 20px;
+  border-right: 3px solid var(--color-beige-medium);
+}
+
+.besuch2__container--2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.besuch2 button {
+  align-self: flex-end;
+  margin: 20px 0;
+}
+
+.besuch2__container--2 button {
+  margin-top: 30px;
+}
+
+.besuch2--preis {
+  display: flex;
+  justify-content: space-between;
+}
+
+.besuch3 {
+  padding: 0 80px;
+  display: flex;
+  gap: 20px;
+}
+
+.besuch3__abschnitt {
+  background-color: var(--color-brown);
+  width: 33%;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.besuch3__abschnitt p {
+  color: var(--color-white);
+}
+
+.besuch3--beige p {
+  color: var(--color-beige-medium);
+}
+
+.besuch3-1__liste {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*------------------- Escape Game ----------------------*/
 #escape {
   display: flex;
@@ -392,4 +495,32 @@ iframe {
 .news {
   display: flex;
   flex-direction: row;
+}
+
+/*------------------- Newsartikel ----------------------*/
+
+#box-newsartikel {
+  width: 200%;
+}
+
+/*------------------- Erlebnisse ----------------------*/
+
+.erlebniss {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.box-erlebniss img {
+  width: 200px;
+  height: auto;
+}
+
+.box2-erlebniss img {
+  width: 350px;
+  height: auto;
+}
+
+.box2-erlebniss p {
+  color: var(--color-white);
 }
