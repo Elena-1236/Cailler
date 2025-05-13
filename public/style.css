@@ -449,6 +449,7 @@ iframe {
   padding: 0 80px;
   display: flex;
   gap: 20px;
+  margin: 40px 0;
 }
 
 .besuch3__abschnitt {
@@ -471,6 +472,94 @@ iframe {
 .besuch3-1__liste {
   display: flex;
   justify-content: space-between;
+}
+
+.besuch3-2__liste {
+  display: flex;
+  gap: 20px;
+}
+
+.besuch3-2__liste-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.besuch3-2__liste-icons img {
+  width: 30px;
+  height: auto;
+}
+
+.besuch3-2__liste-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  gap: 19px;
+}
+
+.besuch3-3__sprachen {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.besuch4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.besuch4-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.besuch4-1__liste {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.besuch4-2 {
+  width: 52%;
+}
+
+.besuch4-2 iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.besuch5 {
+  margin: 40px 0;
+}
+
+.besuch5 p {
+  color: var(--color-white);
+}
+
+.besuch5,
+.besuch6 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.besuch5-1,
+.besuch6-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.besuch5-2,
+.besuch6-1 {
+  width: 30%;
+  height: auto;
+}
+
+.besuch6 {
+  margin-bottom: 40px;
 }
 
 /*------------------- Escape Game ----------------------*/
@@ -507,13 +596,29 @@ iframe {
 
 .erlebniss {
   display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.box-erlebniss {
+  display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 15%;
+}
+
+.text-erlebnisse {
+  width: 70%;
 }
 
 .box-erlebniss img {
   width: 200px;
   height: auto;
+}
+
+.erlebniss2 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .box2-erlebniss img {
@@ -523,4 +628,158 @@ iframe {
 
 .box2-erlebniss p {
   color: var(--color-white);
+}
+
+/*------------------- Ueber uns ----------------------*/
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 35%;
+  color: var(--color-brown);
+}
+
+/*-----------------------------Shop--------------------*/
+
+.shop1 input {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-big);
+  color: var(--color-white);
+  background-color: var(--color-beige-medium);
+  border: 0;
+  padding: 5px 18px;
+  border-radius: 10px;
+}
+
+.shop2 button,
+.shop2 button a {
+  font-size: var(--font-size-small);
+}
+
+.shop1 {
+  display: flex;
+  gap: 40px;
+}
+
+.shop2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.shop2__linie {
+  display: flex;
+  gap: 40px;
+}
+
+.shop2__produkt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.shop2__produkt-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.shop2__produkt--bild {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------------------Produkt-----------------------*/
+
+.produkt1-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produkt1-1__bild {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.produkt1-2__bilder {
+  display: flex;
+  gap: 40px;
+}
+
+.produkt1-2__bilder img {
+  width: 100px;
+  height: auto;
+}
+
+.produkt1-1__infos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.produkt1-1__details {
+  background-color: var(--color-beige-light);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  height: 462px;
+}
+
+.produkt1-1__titel {
+  text-align: center;
+}
+
+.produkt1-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produkt1-2__anzahl {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.produkt1-2__anzahl--anzeige {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.produkt1-2__anzahl button,
+.produkt1-2__anzahl button a {
+  font-size: var(--font-size-small);
+}
+
+.produkt1-2__anzahl--anzeige button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.produkt1-2__preis {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
